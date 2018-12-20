@@ -26,27 +26,29 @@
       :clipped-left="clipped"
       fixed
       app>
-      <v-toolbar-side-icon @click="drawer = !drawer"/>
+      <v-toolbar-side-icon @click="drawer = !drawer">
+        <v-icon>menu</v-icon>
+      </v-toolbar-side-icon>
       <v-btn
         icon
         @click.stop="miniVariant = !miniVariant">
-        <v-icon v-html="miniVariant ? 'fas fa-chevron-right' : 'fas fa-chevron-left'"/>
+        <v-icon v-html="miniVariant ? 'chevron_right' : 'chevron_left'"/>
       </v-btn>
       <v-btn
         icon
         @click.stop="clipped = !clipped">
-        <v-icon>fab fa-fort-awesome</v-icon>
+        <v-icon>web</v-icon>
       </v-btn>
       <v-btn
         icon
         @click.stop="fixed = !fixed">
-        <v-icon>fas fa-window-minimize</v-icon>
+        <v-icon>remove</v-icon>
       </v-btn>
       <v-toolbar-title v-text="title"/>
       <v-btn
         icon
         @click.stop="rightDrawer = !rightDrawer">
-        <v-icon>fas fa-bars</v-icon>
+        <v-icon>menu</v-icon>
       </v-btn>
     </v-toolbar>
     <v-content>
@@ -62,7 +64,7 @@
       <v-list>
         <v-list-tile @click.native="right = !right">
           <v-list-tile-action>
-            <v-icon light>fas fa-exchange-alt</v-icon>
+            <v-icon light>compare_arrows</v-icon>
           </v-list-tile-action>
           <v-list-tile-title>Switch drawer (click me)</v-list-tile-title>
         </v-list-tile>
@@ -84,7 +86,7 @@ export default {
       drawer: true,
       fixed: false,
       items: [
-        { icon: 'fab fa-apple', title: 'Welcome', to: '/' },
+        { icon: 'apps', title: 'Welcome', to: '/' },
         { icon: 'fas fa-lightbulb', title: 'Inspire', to: '/inspire' }
       ],
       miniVariant: false,
