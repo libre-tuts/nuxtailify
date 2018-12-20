@@ -1,4 +1,5 @@
 const pkg = require('./package')
+const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin')
 
 module.exports = {
   mode: 'universal',
@@ -13,9 +14,7 @@ module.exports = {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: pkg.description }
     ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
 
   /*
@@ -26,14 +25,12 @@ module.exports = {
   /*
   ** Global CSS
   */
-  css: [
-  ],
+  css: [],
 
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: [
-  ],
+  plugins: ['@/plugins/vuetify'],
 
   /*
   ** Nuxt.js modules
@@ -53,6 +50,7 @@ module.exports = {
   ** Build configuration
   */
   build: {
+    extractCSS: true,
     /*
     ** You can extend webpack config here
     */
@@ -66,6 +64,10 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
-    }
+      // use vuetify-loader https://vuetifyjs.com/en/guides/a-la-carte#vuetify-loader
+      config.plugins.push(new VuetifyLoaderPlugin())
+    },
+    // transpile it to make it work https://nuxtjs.org/api/configuration-build#transpile
+    transpile: [/^vuetify/]
   }
 }
