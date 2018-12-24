@@ -1,10 +1,20 @@
-# power
+# NuxTailify
 
-> My laudable Nuxt.js project
+> This Nuxt Starter Project Utilizes Vuetify In Conjuction with Tailwind CSS.
+
+> Vuetify Uses Ala Cart Mode with Vuetify Loader Which Load Components On Demand Together With All Its Dependancy and CSS Styling.
+
+> PurgeCSS Was Used to Allow All On Demand Styling of Vuetify While Only Compiling Tailwind CSS Class If It is Used.
+
+> You Can Use Vuetify As Is Without Importing Any Component Except Those Limitation Listed on Their [Docs](https://vuetifyjs.com/en/guides/a-la-carte#vuetify-loader)
+
+> You can Utilize Tailwind Class Using `tw-` prefix ie. `tw-bg-red`.
+
+> Font and Icons Can Be Used for Offline Development (Uses Fontawesome, Material Icons , And Roboto Fonts). Read More On How to Add Custom Icons [Here](https://vuetifyjs.com/en/framework/icons)
 
 ## Build Setup
 
-``` bash
+```bash
 # install dependencies
 $ yarn install
 

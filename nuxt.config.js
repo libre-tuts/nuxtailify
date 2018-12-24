@@ -25,7 +25,7 @@ module.exports = {
   /*
   ** Global CSS
   */
-  css: [],
+  css: ['~/assets/style/app.styl'],
 
   /*
   ** Plugins to load before mounting the App
@@ -37,8 +37,14 @@ module.exports = {
   */
   modules: [
     // Doc: https://github.com/nuxt-community/axios-module#usage
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    'nuxt-purgecss'
   ],
+  purgeCSS: {
+    mode: 'postcss',
+    // whitelist pattern of vuetify class names
+    whitelistPatterns: [/v-$/]
+  },
   /*
   ** Axios module configuration
   */
