@@ -1,6 +1,8 @@
 # NuxTailify
 
-> This Nuxt Starter Project Utilizes Vuetify In Conjuction with Tailwind CSS.
+## About
+
+> A Nuxt Starter Project Utilizes Vuetify In Conjuction with Tailwind CSS.
 
 > Vuetify Uses Ala Cart Mode with Vuetify Loader Which Load Components On Demand Together With All Its Dependancy and CSS Styling.
 
@@ -11,6 +13,18 @@
 > You can Utilize Tailwind Class Using `tw-` prefix ie. `tw-bg-red`.
 
 > Font and Icons Can Be Used for Offline Development (Uses Fontawesome, Material Icons , And Roboto Fonts). Read More On How to Add Custom Icons [Here](https://vuetifyjs.com/en/framework/icons)
+
+## To Do
+
+- Add Internationalization
+- Make Default Layout , Dashboard, Home, Modal
+- Add ENV Var
+- Add Home Page
+- Add Auth Page
+- Add Dashboard Page
+- Add Meta for SEO
+- Middleware for Authenticated User
+- Authentication Can be Choosen to use FireBase or Any Other backend Way of Authentication.
 
 ## Build Setup
 
