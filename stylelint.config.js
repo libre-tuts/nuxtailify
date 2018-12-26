@@ -5,7 +5,7 @@ module.exports = {
     'stylelint-config-standard',
     // Enforce a standard order for CSS properties
     // https://github.com/stormwarning/stylelint-config-recess-order
-    'stylelint-config-recess-order',
+    // 'stylelint-config-recess-order',
     // Override rules that would interfere with Prettier
     // https://github.com/shannonmoeller/stylelint-config-prettier
     'stylelint-config-prettier',

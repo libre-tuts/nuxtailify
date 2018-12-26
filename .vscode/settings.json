@@ -119,6 +119,7 @@
     // ===
     "stylelint.enable": true,
     "css.validate": false,
+    "less.validate": false,
     "scss.validate": false,
     "vetur.validation.style": false,
     "vetur.format.defaultFormatter.css": "none",
@@ -130,5 +131,5 @@
     "[markdown]": {
       "editor.wordWrap": "wordWrapColumn",
       "editor.wordWrapColumn": 80
-    }
+    },
 }

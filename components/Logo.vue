@@ -1,14 +1,14 @@
 <template>
-  <div class="VueToNuxtLogo">
-    <div class="Triangle Triangle--two"/>
-    <div class="Triangle Triangle--one"/>
-    <div class="Triangle Triangle--three"/>
-    <div class="Triangle Triangle--four"/>
+  <div class="vueToNuxtLogo">
+    <div class="triangle triangleOne"/>
+    <div class="triangle triangleTwo"/>
+    <div class="triangle triangleThree"/>
+    <div class="triangle triangleFour"/>
   </div>
 </template>
 
-<style>
-.VueToNuxtLogo {
+<style lang="scss" module>
+.vueToNuxtLogo {
   display: inline-block;
   animation: turn 2s linear forwards 1s;
   transform: rotateX(180deg);
@@ -18,7 +18,7 @@
   width: 245px;
 }
 
-.Triangle {
+.triangle {
   position: absolute;
   top: 0;
   left: 0;
@@ -26,13 +26,13 @@
   height: 0;
 }
 
-.Triangle--one {
+.triangleOne {
   border-left: 105px solid transparent;
   border-right: 105px solid transparent;
   border-bottom: 180px solid #41b883;
 }
 
-.Triangle--two {
+.triangleTwo {
   top: 30px;
   left: 35px;
   animation: goright 0.5s linear forwards 3.5s;
@@ -41,7 +41,7 @@
   border-bottom: 150px solid #3b8070;
 }
 
-.Triangle--three {
+.triangleThree {
   top: 60px;
   left: 35px;
   animation: goright 0.5s linear forwards 3.5s;
@@ -50,7 +50,7 @@
   border-bottom: 120px solid #35495e;
 }
 
-.Triangle--four {
+.triangleFour {
   top: 120px;
   left: 70px;
   animation: godown 0.5s linear forwards 3s;
