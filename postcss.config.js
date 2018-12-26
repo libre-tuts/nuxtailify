@@ -5,12 +5,12 @@ module.exports = {
     require('tailwindcss')('./tailwind.js'),
     require('autoprefixer')(),
     require('postcss-preset-env')({
-      stage: 0
+      stage: 0,
     }),
     require('cssnano')({
       preset: 'default',
       discardComments: { removeAll: true },
-      zindex: false
-    })
-  ]
+      zindex: false,
+    }),
+  ],
 }

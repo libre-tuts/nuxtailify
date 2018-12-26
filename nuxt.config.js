@@ -12,9 +12,9 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: pkg.description }
+      { hid: 'description', name: 'description', content: pkg.description },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
 
   /*
@@ -38,12 +38,12 @@ module.exports = {
   modules: [
     // Doc: https://github.com/nuxt-community/axios-module#usage
     '@nuxtjs/axios',
-    'nuxt-purgecss'
+    'nuxt-purgecss',
   ],
   purgeCSS: {
     mode: 'postcss',
     // whitelist pattern of vuetify class names
-    whitelistPatterns: [/v-$/]
+    whitelistPatterns: [/v-$/],
   },
   /*
   ** Axios module configuration
@@ -67,13 +67,13 @@ module.exports = {
           enforce: 'pre',
           test: /\.(js|vue)$/,
           loader: 'eslint-loader',
-          exclude: /(node_modules)/
+          exclude: /(node_modules)/,
         })
       }
       // use vuetify-loader https://vuetifyjs.com/en/guides/a-la-carte#vuetify-loader
       config.plugins.push(new VuetifyLoaderPlugin())
     },
     // transpile it to make it work https://nuxtjs.org/api/configuration-build#transpile
-    transpile: [/^vuetify/]
-  }
+    transpile: [/^vuetify/],
+  },
 }
